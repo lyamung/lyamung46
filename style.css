@@ -144,15 +144,17 @@ header 영역 - 로고, 메인메뉴
 }
 
 /* -----------------------------------------------------------------------
-프로필별 텍스트 컬러 변경
+프로필별 텍스트 변경
 ----------------------------------------------------------------------- */
+#Nile {
+    font-family: 'GabiaOndam';
+}
 
 
 
 /* -----------------------------------------------------------------------
 미디어 쿼리(media query) - 반응형 웹 구현
 ----------------------------------------------------------------------- */
-
 /* 사용자 화면의 뷰포트(viewport) 크기가 1024px보다 작은 경우(최대 1024px) 적용 */
 @media screen and (max-width: 1024px) {
     #header {
@@ -182,4 +184,32 @@ header 영역 - 로고, 메인메뉴
     #Email {
         padding-top: 40px;
     }
+}
+
+
+/* 패스워드 입력 팝업 스타일 */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup h2 {
+    margin-top: 0;
 }

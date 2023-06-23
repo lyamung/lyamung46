@@ -1,8 +1,8 @@
-<!DOCTYPE html>  <!-- HTML5 문서임을 알려줌 -->
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">  <!-- 한글이 정상적으로 보이도록 설정 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">  <!-- 모바일에서 콘텐츠 크기 최적화 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Ryamung46 Profile</title>
 </head>
@@ -25,21 +25,34 @@
 
         <div id="projects">
             <div class="project-container">
-                <img src="images/Molo.png">
-                <a href="Rienika Nile.html">
+                <img src="images/P_Rienika Nile.png">
+                <a href="Rienika Nile.html" onclick="showPasswordPopup(event)">
                     <div class="project-overlay">
                         <h3 class="project-title">Rienika Nile</h3>
                         <p class="project-description">
-                            2023.06.29 [안녕커]<br>
-                            "닐레, 그건 내 이름이야. 신성하게 여겨지던 나무의 이름을 따왔지. 지금은 어떻게 됐으려나..."
+                            "어쩌다 내가 다시 돌아온건진 모르겠지만, 나름 기분 좋은 것 같네."<br>
+                            -리에니카 닐레-
                         </p>
                     </div>
                 </a>
             </div>
-
         </div>
 
         <div id="Email">lyamung46@gmail.com</div>
     </div>
+
+    <button id="open-popup">패스워드 입력</button>
+
+    <div class="popup" id="password-popup">
+        <div class="popup-content">
+            <h2>패스워드를 입력하세요</h2>
+            <input type="password" placeholder="패스워드">
+            <br>
+            <button id="submit-password">확인</button>
+        </div>
+    </div>
+
+
+    <script src="script.js" charset="UTF-8"></script>
 </body>
 </html>
