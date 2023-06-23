@@ -137,7 +137,7 @@ header 영역 - 로고, 메인메뉴
     margin: 0;
     padding: 0;
 }
-#Email {
+#Fonts {
     padding-top: 60px;
     text-align: center;
     font-size: 16px;
@@ -148,6 +148,7 @@ header 영역 - 로고, 메인메뉴
 ----------------------------------------------------------------------- */
 #Nile {
     font-family: 'GabiaOndam';
+    margin-bottom: 100px;
 }
 
 
