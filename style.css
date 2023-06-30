@@ -13,6 +13,10 @@
     font-family: "GabiaOndam";
     src: url("fonts/GabiaOndam.ttf") format('truetype');
 }
+@font-face { /*2023.07.05 : 로화*/
+    font-family: "DalseoHealingMedium";
+    src: url("fonts/DalseoHealingMedium.ttf") format('truetype');
+}
 
 
 html {
@@ -151,8 +155,11 @@ header 영역 - 로고, 메인메뉴
     margin-bottom: 100px;
 }
 
-
-
+#Rohwa {
+    font-family: 'DalseoHealingMedium';
+    margin-bottom: 120px;
+    text-align: center;
+}
 /* -----------------------------------------------------------------------
 미디어 쿼리(media query) - 반응형 웹 구현
 ----------------------------------------------------------------------- */

@@ -2,18 +2,27 @@ var openPopupButton = document.getElementById("open-popup");
 var passwordPopup = document.getElementById("password-popup");
 var submitButton = document.getElementById("submit-password");
 var passwordInput = document.querySelector("#password-popup input[type='password']");
-var projectLink = document.querySelector(".project-container a");
+var projectLinks = document.querySelectorAll(".project-container a");
 
 openPopupButton.addEventListener("click", function () {
     passwordPopup.style.display = "block";
 });
 
 submitButton.addEventListener("click", function () {
-    var password = "0530"; // 패스워드를 여기에 입력하세요
+    var passwords = ["0530", "1234"]; // 각 프로젝트별 패스워드를 배열에 저장하세요
+    var inputPassword = passwordInput.value;
+    var projectIndex = -1;
 
-    if (passwordInput.value === password) {
+    for (var i = 0; i < passwords.length; i++) {
+        if (inputPassword === passwords[i]) {
+            projectIndex = i;
+            break;
+        }
+    }
+
+    if (projectIndex !== -1) {
         passwordPopup.style.display = "none";
-        window.location.href = projectLink.href; // 링크로 이동하는 대신 페이지를 새로고침하여 링크를 열어보세요.
+        window.location.href = projectLinks[projectIndex].href;
     } else {
         alert("잘못된 패스워드입니다.");
     }
