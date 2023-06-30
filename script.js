@@ -9,7 +9,7 @@ openPopupButton.addEventListener("click", function () {
 });
 
 submitButton.addEventListener("click", function () {
-    var passwords = ["0530", "1234"]; // 각 프로젝트별 패스워드를 배열에 저장하세요
+    var passwords = ["0530", "0242"]; // 각 프로젝트별 패스워드를 배열에 저장하세요
     var inputPassword = passwordInput.value;
     var projectIndex = -1;
 
